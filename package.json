@@ -1,0 +1,35 @@
+{
+  "name": "nuxt-ui-pro-template-saas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@formkit/nuxt": "^1.6.5",
+    "@formkit/pro": "^0.127.0",
+    "@iconify-json/heroicons": "^1.1.24",
+    "@iconify-json/simple-icons": "^1.1.114",
+    "@nuxt/content": "^2.13.2",
+    "@nuxt/fonts": "^0.7.2",
+    "@nuxt/image": "^1.7.0",
+    "@nuxt/ui-pro": "^1.4.1",
+    "@vueuse/nuxt": "^10.11.1",
+    "ag-grid-vue3": "^32.1.0",
+    "nuxt": "^3.12.4",
+    "nuxt-og-image": "^3.0.0-rc.65"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.1",
+    "@nuxthq/studio": "^2.0.3",
+    "eslint": "^9.9.0",
+    "vue-tsc": "^2.0.29"
+  },
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
+}
