@@ -1,6 +1,6 @@
 # Genesis with Nuxt 3
 
-Using Nuxt UI Pro - SaaS template
+Rebuild Genesis site using Nuxt UI Pro - SaaS templates
 
 ## Project structure
 
