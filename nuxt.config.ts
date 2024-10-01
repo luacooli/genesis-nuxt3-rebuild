@@ -1,6 +1,33 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { resolve } from "pathe";
+import { useLayers } from "nuxt-layers-utils";
+
+const layers = useLayers(__dirname, {
+  core: "core",
+  portal: "layers/portal",
+  dicomvix: "layers/dicomvix",
+});
+
 export default defineNuxtConfig({
-  extends: ["@nuxt/ui-pro"],
+  extends: ["@nuxt/ui-pro", layers.extends()],
+
+  alias: {
+    // layers.alias('#')
+    "#core": resolve("core"),
+    "#portal": resolve("layers/portal"),
+    "#dicomvix": resolve("layers/dicomvix"),
+  },
+
+  dir: {
+    // core
+    ...layers.dir("core", ["layouts", "pages", "middleware"]),
+
+    // portal
+    ...layers.dir("portal", ["pages"]),
+
+    // dicomvix
+    ...layers.dir("dicomvix", ["pages"]),
+  },
 
   modules: [
     "@nuxt/content",

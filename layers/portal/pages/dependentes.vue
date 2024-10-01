@@ -4,7 +4,7 @@ import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
 import { AgGridVue } from "ag-grid-vue3";
 
-import createPatientModal from '../../components/portal/createPatientModal'
+import CreatePatientModal from "../../components/portal/CreatePatientModal";
 
 const colDefs = ref([
   { field: "nome", flex: 3 },
@@ -25,9 +25,9 @@ const paginationPageSizeSelector = [10, 20, 50, 100];
 const modal = useModal();
 
 const openCreatePatientModal = () => {
-  console.log('vai abrir');
-  
-  modal.open(createPatientModal, {
+  console.log("vai abrir");
+
+  modal.open(CreatePatientModal, {
     isDependent: true,
     onSave(event) {
       console.log(event);

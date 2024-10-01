@@ -54,6 +54,9 @@ importers:
       eslint:
         specifier: ^9.9.0
         version: 9.9.0(jiti@1.21.6)
+      nuxt-layers-utils:
+        specifier: ^0.3.0
+        version: 0.3.0(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@20.14.10)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(terser@5.31.2)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.10)(terser@5.31.2))(vue-tsc@2.0.29(typescript@5.5.3)))
       vue-tsc:
         specifier: ^2.0.29
         version: 2.0.29(typescript@5.5.3)
@@ -3911,6 +3914,11 @@ packages:
   nuxt-component-meta@0.6.6:
     resolution: {integrity: sha512-Y5/tuZuZOlD4GluAjcTU6JlhtEeg7/92VEfoV814t2uTuZK+b9RokJeGtrMotXuCJ4vuT1Is7M+pkPm+vY/tXA==}
     hasBin: true
+
+  nuxt-layers-utils@0.3.0:
+    resolution: {integrity: sha512-NOBzMfZyatCewUTjkSRTf/3BVlcDUxWEecu2Jn5UGHYsR4rKKyll/fXpZ3dXJLD3aJJWfLqNOVjiKbb0dZ0zPw==}
+    peerDependencies:
+      nuxt: ^3.0.0
 
   nuxt-og-image@3.0.0-rc.65:
     resolution: {integrity: sha512-rhfjZBONskXJAnsmv5Wy7f6jbSMRw4JuJ3As4Vg+LttMVzw0YwH/X/gDFRVhJ1z2/2ahvBiBiJAnkmlncR+9Ow==}
@@ -10385,6 +10393,11 @@ snapshots:
       - magicast
       - rollup
       - supports-color
+
+  nuxt-layers-utils@0.3.0(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@20.14.10)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(terser@5.31.2)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.10)(terser@5.31.2))(vue-tsc@2.0.29(typescript@5.5.3))):
+    dependencies:
+      nuxt: 3.12.4(@parcel/watcher@2.4.1)(@types/node@20.14.10)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(terser@5.31.2)(typescript@5.5.3)(vite@5.3.4(@types/node@20.14.10)(terser@5.31.2))(vue-tsc@2.0.29(typescript@5.5.3))
+      pathe: 1.1.2
 
   nuxt-og-image@3.0.0-rc.65(magicast@0.3.4)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.10)(terser@5.31.2))(vue@3.4.38(typescript@5.5.3)):
     dependencies:
